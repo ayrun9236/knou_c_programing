@@ -1,0 +1,99 @@
+# C 컴파일된 실행 파일
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+
+# 디버그 파일
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Visual Studio 관련
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+
+# Code::Blocks 관련
+*.cbp
+*.layout
+*.depend
+
+# Dev-C++ 관련
+*.dev
+
+# Eclipse CDT 관련
+.cproject
+.project
+.settings/
+
+# Makefile 생성 파일
+Makefile.in
+*.make
+
+# 임시 파일
+*~
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# IDE 설정 파일
+.vscode/
+.idea/
+*.code-workspace
+
+# 백업 파일
+*.bak
+*.backup
+*.orig
+
+# 로그 파일
+*.log
+
+# 압축 파일
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 문서 생성 파일 (선택사항)
+*.pdf
+*.docx
+*.pptx
+
+# 테스트 실행 파일
+test_*
+*_test
