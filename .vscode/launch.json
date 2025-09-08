@@ -9,9 +9,9 @@
       "stopAtEntry": false,
       "externalConsole": true,
       "cwd": "c:/ayrun9236_git/knou_c_programing",
-      "program": "c:/ayrun9236_git/knou_c_programing/hello.exe",
+      "program": "c:/ayrun9236_git/knou_c_programing/build/Debug/outDebug",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+      "miDebuggerPath": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",

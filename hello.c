@@ -1,8 +1,13 @@
-#include <stdio.h>
+/*
+ * 예제 : Hello 출력하기
+ * 파일 이름 : Hello.c
+ * 수정 일자 : 20년 월 일
+ * 작성자 : 
+ */
 
-int main() {
-    int a = 10;
-    printf("변수 a의 값: %d\n", a);
-    printf("Hello World!\n");
-    return 0;
-}
+#include <stdio.h>  // 헤더 파일 추가
+
+void main() {       // main 함수 시작
+    printf("Hello~ \n");  // 모니터에 문자열 출력
+
+}                   // main 함수 끝
