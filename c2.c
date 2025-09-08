@@ -83,6 +83,68 @@ void explain_floating_constants() {
     printf("   음수 지수: %f\n", 2.0e-3);
 }
 
+// 문자형 상수 설명 함수
+void explain_character_constants() {
+    printf("\n=== 문자형 상수 예시 ===\n\n");
+    
+    // 1. 일반 문자 상수
+    printf("1. 일반 문자 상수:\n");
+    printf("   'A' = %c (ASCII: %d)\n", 'A', 'A');
+    printf("   'a' = %c (ASCII: %d)\n", 'a', 'a');
+    printf("   '5' = %c (ASCII: %d)\n", '5', '5');
+    printf("   ' ' = '%c' (공백, ASCII: %d)\n", ' ', ' ');
+    printf("   - 작은따옴표로 감싸서 표현\n\n");
+    
+    // 2. 이스케이프 문자 상수
+    printf("2. 이스케이프 문자 상수:\n");
+    printf("   \\a = 경고음(alert) 출력\n");
+    printf("   \\b = 백스페이스(back space) - '%c' (보이지 않음)\n", '\b');
+    printf("   \\f = 새 페이지(form feed) - '%c' (보이지 않음)\n", '\f');
+    printf("   \\n = 줄 바꿈(new line)\n");
+    printf("   \\r = 커서를 행의 시작으로 이동(carriage return)\n");
+    printf("   \\t = 수평 탭(horizontal tab) - '%c' (보이지 않음)\n", '\t');
+    printf("   \\0 = null 문자 (ASCII: %d)\n", '\0');
+    printf("   - 백슬래시(\\\\)로 시작하는 특수 문자\n\n");
+    
+    // 3. 8진수 ASCII 코드로 문자 표현
+    printf("3. 8진수 ASCII 코드로 문자 표현:\n");
+    printf("   \\101 = %c (A의 8진수 표현)\n", '\101');
+    printf("   \\141 = %c (a의 8진수 표현)\n", '\141');
+    printf("   \\060 = %c (0의 8진수 표현)\n", '\060');
+    printf("   - \\\\뒤에 3자리 8진수 사용\n\n");
+    
+    // 4. 16진수 ASCII 코드로 문자 표현
+    printf("4. 16진수 ASCII 코드로 문자 표현:\n");
+    printf("   \\x41 = %c (A의 16진수 표현)\n", '\x41');
+    printf("   \\x61 = %c (a의 16진수 표현)\n", '\x61');
+    printf("   \\x30 = %c (0의 16진수 표현)\n", '\x30');
+    printf("   - \\\\x뒤에 16진수 사용\n\n");
+    
+    // 5. 실제 이스케이프 문자 동작 시연
+    printf("5. 이스케이프 문자 동작 시연:\n");
+    printf("   줄 바꿈: Hello\\nWorld\n");
+    printf("   탭 사용: Name\\tAge\\tCity\n");
+    printf("   탭 사용: John\\t25\\tSeoul\n");
+    printf("   백스페이스: Hello\\bWorld (\\b는 백스페이스)\n");
+    printf("   캐리지 리턴: Hello\\rWorld (\\r은 줄 시작으로)\n");
+    printf("   경고음: \\a (소리로 확인)\n");
+    printf("   - 실제 동작은 실행 시 확인 가능\n\n");
+    
+    // 6. 문자와 숫자의 관계
+    printf("6. 문자와 숫자의 관계:\n");
+    printf("   'A' + 1 = %c (B)\n", 'A' + 1);
+    printf("   'a' - 'A' = %d (대소문자 차이)\n", 'a' - 'A');
+    printf("   '5' - '0' = %d (문자 5를 숫자 5로 변환)\n", '5' - '0');
+    printf("   - 문자는 ASCII 코드값으로 연산 가능\n\n");
+    
+    // 7. 특수 문자들
+    printf("7. 특수 문자들:\n");
+    printf("   작은따옴표: \\' = %c\n", '\'');
+    printf("   큰따옴표: \\\" = %c\n", '\"');
+    printf("   백슬래시: \\\\ = %c\n", '\\');
+    printf("   - 특수 문자를 출력하려면 이스케이프 필요\n");
+}
+
 int main() {
     // 콘솔 인코딩을 UTF-8로 설정
     SetConsoleOutputCP(CP_UTF8);
@@ -92,6 +154,9 @@ int main() {
     
     // 실수형 상수 설명
     explain_floating_constants();
+    
+    // 문자형 상수 설명
+    explain_character_constants();
     
     return 0;
 }
